@@ -8,14 +8,9 @@ fi
 echo "Getting sudo ready"
 sudo -v
 
-echo "Moving dotfiles to home"
-sudo pacman -S --noconfirm rsync 
-rsync -av go_to_home/ ~
-echo "Moved to home"
-
 echo "Installing packages"
 sudo pacman -Sy
-sudo pacman -S --needed --noconfirm $(cat installList)
+sudo pacman -S --needed --noconfirm $(cat install_list)
 echo "Packages installed"
 
 echo "Installing yay Aur Helper"
