@@ -1,5 +1,5 @@
-## Made for Arch-Linux with all my bloat
+## Made for Arch-Linux
 
-1. ```cd dotfiles/linux```
+1. ```cd dotfiles```
 
 2. ```./install.sh```
